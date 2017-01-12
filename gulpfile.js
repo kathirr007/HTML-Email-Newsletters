@@ -27,6 +27,7 @@ fonts = [bootstrapSources + 'assets/fonts/**/*', sourceDir + 'assets/fonts/*.*']
 imgSources = [sourceDir + 'assets/images/**/*'];
 jsSources = [nodeModules + 'jquery/dist/jquery.min.js', nodeModules + 'mustache/mustache.min.js', bootstrapSources + 'assets/javascripts/bootstrap.min.js', sourceDir + 'assets/js/*.js'];
 sassSources = [bootstrapSources + 'assets/stylesheets/**/*.scss', sourceDir + 'assets/scss/**/*.scss'];
+clientsSources = [sourceDir + 'assets/clients/**/*'];
 // htmlSources = [sourceDir + '*.html'];
 htmlSources = { in : sourceDir + '*.html',
     watch: [sourceDir + '*.html', sourceDir + 'template/**/*'],
@@ -82,7 +83,7 @@ gulp.task('images', function() {
         .pipe($.connect.reload());
 });
 gulp.task('clients', function() {
-    gulp.src(sourceDir + 'assets/clients/**/*')
+    gulp.src(clientsSources)
         .pipe($.jsbeautifier({"indent-size":"2"}))
         .pipe($.if(devBuild === 'production', $.htmlmin({ collapseWhitespace: true })))
         .pipe(gulp.dest(outputDir + 'assets/clients'))
@@ -123,6 +124,7 @@ gulp.task('watch', function() {
     gulp.watch(sassSources, ['sass']);
     gulp.watch(imgSources, ['images']);
     gulp.watch(htmlSources.watch, ['html']);
+    gulp.watch(clientsSources, ['clients']);
 });
 
  // default travis CI
