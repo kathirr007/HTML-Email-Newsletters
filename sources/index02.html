@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- @include template/_meta_all.html -->
+</head>
+
+<body>
+  <div class="page-header text-center">
+    <h1>HTML Email Newsletters <br>
+<small>Different kind of HTML Email Newsletters</small></h1>
+  </div>
+  <ul class="nav nav-tabs" id="interest_tabs">
+    <!--top level tabs-->
+<!-- @include template/_toplevel_tabs.html -->
+  </ul>
+  <!--top level tab content-->
+  <div class="tab-content">
+    <!--client01 tab menu-->
+<!-- @include template/_client01_tabs.html -->
+    <!--client02 tab menu-->
+<!-- @include template/_client02_tabs.html -->
+    <!--client03 tab menu-->
+<!-- @include template/_client03_tabs.html -->
+    <!--client04 tab menu-->
+<!-- @include template/_client04_tabs.html -->
+    <!--client05 tab menu-->
+<!-- @include template/_client05_tabs.html -->
+    <!--client06 tab menu-->
+<!-- @include template/_client06_tabs.html -->
+    <!--client07 tab menu-->
+<!-- @include template/_client07_tabs.html -->
+    <!--client08 tab menu-->
+<!-- @include template/_client08_tabs.html -->
+    <!--client09 tab menu-->
+<!-- @include template/_client09_tabs.html -->
+    <!--client10 tab menu-->
+<!-- @include template/_client10_tabs.html -->
+
+  </div>
+  <!--secondary level tab content-->
+  <div class="tab-content">
+    <!--client01 tab content-->
+<!-- @include template/_client01_contents.html -->
+    <!--client02 tab content-->
+<!-- @include template/_client02_contents.html -->
+    <!--client03 tab content-->
+<!-- @include template/_client03_contents.html -->
+    <!--client04 tab content-->
+<!-- @include template/_client04_contents.html -->
+    <!--client05 tab content-->
+<!-- @include template/_client05_contents.html -->
+    <!--client06 tab content-->
+<!-- @include template/_client06_contents.html -->
+    <!--client07 tab content-->
+<!-- @include template/_client07_contents.html -->
+    <!--client08 tab content-->
+<!-- @include template/_client08_contents.html -->
+    <!--client09 tab content-->
+<!-- @include template/_client09_contents.html -->
+    <!--client10 tab content-->
+<!-- @include template/_client10_contents.html -->
+
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script>
+  $('#interest_tabs').on('click', 'a[data-toggle="tab"]', function(e) {
+    e.preventDefault();
+
+    var $link = $(this);
+
+    if (!$link.parent().hasClass('active')) {
+
+      //remove active class from other tab-panes
+      $('.tab-content:not(.' + $link.attr('href').replace('#', '') + ') .tab-pane').removeClass('active');
+
+      // click first submenu tab for active section
+      $('a[href="' + $link.attr('href') + '_all"][data-toggle="tab"]').click();
+
+      // activate tab-pane for active section
+      $('.tab-content.' + $link.attr('href').replace('#', '') + ' .tab-pane:first').addClass('active');
+    }
+
+  });
+  </script>
+</body>
+
+</html>
