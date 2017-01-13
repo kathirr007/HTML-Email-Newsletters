@@ -66,7 +66,7 @@ gulp.task('sass', ['fonts'], function() {
 gulp.task('html', function() {
     gulp.src(sourceDir + '*.html')
         .pipe($.preprocess({ context: {devBuild: devBuild} }))
-        .pipe($.jsbeautifier())
+        // .pipe($.jsbeautifier())
         .pipe($.if(devBuild === 'production', $.htmlmin({ collapseWhitespace: true })))
         .pipe(gulp.dest(outputDir))
         .pipe($.connect.reload());
@@ -84,7 +84,7 @@ gulp.task('images', function() {
 });
 gulp.task('clients', function() {
     gulp.src(clientsSources)
-        .pipe($.jsbeautifier({"indent-size":"2"}))
+        // .pipe($.jsbeautifier({"indent-size":"2"}))
         .pipe($.if(devBuild === 'production', $.htmlmin({ collapseWhitespace: true })))
         .pipe(gulp.dest(outputDir + 'assets/clients'))
         .pipe($.connect.reload());

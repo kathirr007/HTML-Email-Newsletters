@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name = "format-detection" content = "telephone=no">
+<title>Client 01 | Layout 01</title>
+<style type="text/css">
+table th { margin:0 !important; padding:0; vertical-align:top; font-weight:normal !important; font-size:inherit;}
+body {
+margin: 0px;
+padding: 0px;
+background-color: #FFFFFF;
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust:none !important;
+-ms-text-size-adjust:none !important;
+}
+table, td {
+border-collapse:collapse !important;
+mso-table-lspace:0pt !important;
+mso-table-rspace:0pt !important;
+}
+* {
+line-height: normal !important;
+}
+a[href^="x-apple-data-detectors:"] {
+   color: inherit;
+   text-decoration: inherit;
+}
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+@media screen and (max-device-width: 480px) {
+*[class~=full] {
+width: 100% !important;
+min-width:100% !important;
+}
+*[class~=mobilehide] {
+display: none !important;
+}
+*[class~=show] {
+display: block !important;
+font-size: inherit !important; 
+max-height: none !important; 
+width:auto !important; 
+line-height: normal !important; 
+overflow:visible !important;
+}
+
+*[class~=imgfull] {
+width:100% !important;
+height:auto !important;
+}
+*[class~=text_center] {
+text-align:center !important;
+}
+*[class~=align_center] {
+float:none !important;
+margin:0 auto !important;
+}
+*[class~=floatright] {
+float:right !important;
+}
+*[class~=floatleft] {
+float:left !important;
+}
+*[class~=margin_b10] {
+margin-bottom: 10px !important;
+}
+*[class~=margin_t10] {
+margin-top: 10px !important;
+}
+
+*[class=height15] {
+height:15px !important;
+}
+*[class=height10] {
+height:10px !important;
+}
+*[class=floatleft] {
+float:left !important;
+}
+*[class~=nopad] {
+padding:0px 0px 0px 0px !important;
+}
+
+*[class~=coldrop] {
+display:block !important;
+width:100% !important;
+padding:0px !important;
+}
+.arrange_top{
+display:table-header-group !important;
+}
+.arrange_bottom{
+display:table-footer-group !important;
+}
+*[class=autoheight] {
+height:auto !important;
+}
+*[class=autowidth] {
+width:auto !important;
+}
+*[class=autowidthheight] {
+width:auto !important;
+height:auto !important;
+}
+
+body[yahoo] *[class~=offer_text_bg] {
+width: 100% !important;
+background-size:cover !important;
+background-position:100% top !important;
+}
+body[yahoo] *[class~=no_bg] {
+background:none !important;
+background-color:#ffffff !important;
+}
+body[yahoo] *[class~=offer_text_bg], *[class~=offer_01_left], *[class~=offer_01_img],* [class~=offer_01_text], *[class~=offer_01_right]  {
+height:206px !important;
+}
+body[yahoo]  *[class~=offer_01_left] img, *[class~=offer_01_img] img, *[class~=offer_01_right] img  {
+height:206px !important;
+width:100% !important;
+}
+body[yahoo]  *[class~=social_left]  {
+width:20.3125% !important;
+}
+body[yahoo]  *[class~=social_right]  {
+width:19.6875% !important;
+}
+
+/*body[yahoo]  *[class~=social_left] img, *[class~=social_right] img, *[class~=offer_01_right] img  {
+height:37px !important;
+width:100% !important;
+}*/
+
+
+
+body[yahoo] *[class~=offer_bg_white] {
+background-color:#ffffff !important;
+}
+body[yahoo] *[class~=offer_text] {
+background-color:#ffffff !important;
+border-top-right-radius:10px !important;
+border-top-left-radius:10px !important;
+
+}
+body[yahoo] *[class~=offer_img_curved] {
+border-radius:10px !important;
+}
+.text_01 {
+font-size:10px !important;  
+  }
+.text_02 {
+font-size:15px !important;  
+  }
+.text_03 {
+font-size:30px !important;  
+  }
+
+*[class~=padding_lr10] {
+padding:0px 10px 0px 10px !important;
+}
+
+*[class~=padding_t10] {
+padding:10px 0px 0px 0px !important;
+}
+
+*[class~=height20] {
+height:20px !important;
+}
+*[class~=height15] {
+height:15px !important;
+}
+*[class~=height10] {
+height:10px !important;
+}
+*[class~=height5] {
+height:5px !important;
+}
+
+}
+
+@media screen and (max-device-width: 414px) {
+body[yahoo] *[class~=offer_text_bg], *[class~=offer_01_left], *[class~=offer_01_img],* [class~=offer_01_text], *[class~=offer_01_right]  {
+height:177px !important;
+}
+body[yahoo]  *[class~=offer_01_left] img, *[class~=offer_01_img] img, *[class~=offer_01_right] img  {
+height:177px !important;
+width:100% !important;
+}
+.text_01 {
+font-size:8px !important; 
+  }
+.text_02 {
+font-size:10px !important;  
+  }
+.text_03 {
+font-size:20px !important;  
+  } 
+}
+  
+@media screen and (max-device-width: 375px) {
+body[yahoo] *[class~=offer_text_bg], *[class~=offer_01_left], *[class~=offer_01_img],* [class~=offer_01_text], *[class~=offer_01_right]  {
+height:160px !important;
+}
+body[yahoo]  *[class~=offer_01_left] img, *[class~=offer_01_img] img, *[class~=offer_01_right] img  {
+height:160px !important;
+width:100% !important;
+}
+.text_01 {
+font-size:8px !important; 
+  }
+.text_02 {
+font-size:10px !important;  
+  }
+.text_03 {
+font-size:20px !important;  
+  } 
+}
+
+@media screen and (max-device-width: 320px), screen and (max-device-width: 360px) {
+*[class~=mobilehide2] {
+display: none !important;
+}
+
+.text_01 {
+font-size:8px !important; 
+  }
+.text_02 {
+font-size:10px !important;  
+  }
+.text_03 {
+font-size:20px !important;  
+  }
+
+}
+</style>
+<!--[if gt mso 14]>
+<style type="text/css">
+  .height_01 {
+    font-size:1px;
+    line-height:1px;    
+    }
+</style>
+<![endif]-->
+</head>
+
+<body style="-moz-user-select: none;" yahoo="fix">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout:fixed;">
+<tbody><tr>
+<td style="vertical-align:top;" align="center" bgcolor="#FFFFFF">
+<table class="full" align="center" border="0" cellpadding="0" cellspacing="0" width="640" style="min-width:640px;">
+<tbody>
+<tr>
+<td style="vertical-align:top;" align="center">
+<!-- preheader -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+  <td valign="top" height="10" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+</tr>
+<tr>
+<td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#252525; -webkit-text-size-adjust:none; font-weight:bold; text-transform:uppercase;" align="center">Nu 2 italian pizza’s voor slechts 18.-</td>
+</tr>
+<tr>
+  <td valign="top" height="5" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+</tr>
+</tbody>
+</table>
+<!-- /preheader -->
+
+<!-- top_shadow -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td style="font-family:Arial, Helvetica, sans-serif; font-size:1px; color:#252525;" align="center"><img style="display:block; border:none;" class="imgfull" src="../../assets/clients/client-01/layouts/layout-01/images/shadow_top.jpg" width="640" height="10" alt=""/></td>
+</tr>
+</tbody>
+</table>
+<!-- /top_shadow -->
+
+<!-- Main Body module -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+  <td bgcolor="#faf1e1" valign="top" align="center">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+<!-- header -->
+            <tr>
+              <td valign="top">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+  <td valign="top" height="20" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+</tr>
+                        <tr>
+                        <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#252525; -webkit-text-size-adjust:none;" align="center">
+                          <table width="86%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <td valign="top">
+                                    <table class="align_center" align="left" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr>
+                                          <td valign="top" align="center"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/logo_top.png" alt="Domino's" width="228" height="52" style="display:block; border:none;" title="Domino's"/></a></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class="align_center" align="right" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr>
+                                            <td valign="top" height="20" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text_center" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#252525; -webkit-text-size-adjust:none;" valign="top" align="right">Hurry up! Deze acties zijn geldig t/m 09/08/2015
+                                            <br>
+                                            Kun je deze mail niet lezen? Bekijk hem in je browser</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                        </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" height="20" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </td>
+            </tr>
+<!-- /header --> 
+<!-- top_banner -->
+            <tr>
+              <td valign="top">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td align="left" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/top_banner.jpg" alt="" width="640" height="670" class="imgfull" style="display:block;" border="0" /></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </td>
+            </tr>
+<!-- /top_banner --> 
+<!-- baner_01 -->
+            <tr>
+              <td valign="top">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr class="mobilehide">
+                          <td align="left" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/banner_01.jpg" alt="" width="640" height="149" class="imgfull" style="display:block;" border="0" /></a></td>
+                        </tr>
+                        <!--[if !mso]><!-->
+                        <tr>
+                        <td valign="top">
+                        <div class="show" style="display: none; font-size: 0; max-height: 0; width:0px; line-height: 0; padding: 0;mso-hide: all; overflow:hidden;">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <td align="left" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/banner_01_mobile.jpg" alt="" width="640" height="149" class="imgfull" style="display:block;" border="0" /></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                        </div>
+                        </td>
+                        </tr>
+                        <!--<![endif]-->                        
+                      </tbody>
+                    </table>
+                </td>
+            </tr>
+<!-- /baner_01 --> 
+<!-- offer_01_test -->
+            <tr>
+              <td valign="top" class="">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <th align="left" style="vertical-align:top;" class="coldrop" height="15"><img class="mobilehide" src="../../assets/clients/client-01/layouts/layout-01/images/offer_01_left.jpg" width="29" height="274" alt=""/></th>
+                          <th class="coldrop" align="center" style="vertical-align:top;">
+                            <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <th align="center" style="vertical-align:top;"><a href="#" ><img style="display:block; border:none;" class="imgfull offer_img_curved margin_b10" src="../../assets/clients/client-01/layouts/layout-01/images/offer_01_img.jpg" width="349" height="274" alt=""/></a></th>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </th>
+                          <th class="coldrop" align="left" style="vertical-align:top;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                            <td class="offer_text_bg no_bg" background="../../assets/clients/client-01/layouts/layout-01/images/offer_text_bg.jpg" bgcolor="" width="225" height="274" valign="middle">
+                            <!--[if gte mso 9]>
+                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:225px;height:274px;">
+                            <v:fill type="tile" src="assets/clients/client-01/layouts/layout-01/images/offer_text_bg.jpg" color="#718292" />
+                            <v:textbox inset="0,0,0,0">
+                            <![endif]-->
+                            <div>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                            <td height="274" valign="middle" style="vertical-align:middle;" align="center" class="autoheight">
+                            <table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+                            
+                            <tr>
+                            <td valign="middle" align="center">
+                            <table class="" width="90%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                            <td height="10" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            <tr>
+                            <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif; vertical-align:middle; font-size:18px; color:#000000; font-weight:bold;" height="" valign="middle" align="center">Korting op een <br class="mobilehide">pizza naar keuze</td>
+                            </tr>
+                            <tr>
+                            <td height="10" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            <tr>
+                            <td style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif; color:#000000; font-weight:bold;" height="" valign="middle" align="center">
+                              <table border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif;font-size:65px; color:#000000; font-weight:bold;" height="" valign="middle" align="left">1</td>
+                                      <td style="vertical-align:top; font-family:Arial,Helvetica, sans-serif;color:#000000; font-weight:bold;" height="" valign="top" align="left">
+                                        <table align="left" border="0" cellspacing="0" cellpadding="0">
+                                          <tbody>
+                                            <tr>
+                                            <td height="5" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="" style="vertical-align:top; font-family:Arial,Helvetica, sans-serif;font-size:32px; color:#000000; font-weight:bold;">00</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif; vertical-align:middle; font-size:18px; color:#000000; font-weight:normal;" height="" valign="middle" align="center">CODE 12345</td>
+                            </tr>
+                            <tr>
+                            <td height="10" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            <tr>
+                            <td align="center" style="vertical-align:top;">
+                              <table width="" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" style="vertical-align:top;"><img style="display:block;" class="imgfull" src="../../assets/clients/client-01/layouts/layout-01/images/btn.jpg" width="157" height="43" alt=""/></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                            </td>
+                            </tr>                            
+                            <tr>
+                                <td height="10" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            <tr>
+                            <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif; vertical-align:middle; font-size:10px; color:#000000; font-weight:normal;" height="" valign="middle" align="center">Actiepizza's zijn uitgesloten. 
+                              <br>
+                              Geldig bij bezorgen en afhalen.</td>
+                            </tr>
+                            <tr>
+                            <td height="10" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            </tbody>
+                            </table>
+                            
+                            </td>
+                            </tr>
+                            
+                            </table>
+                            </td>
+                            </tr>
+                            </table>
+                            
+                            
+                            
+                            </div>
+                            <!--[if gte mso 9]>
+                            </v:textbox>
+                            </v:rect>
+                            <![endif]-->
+                            </td>
+                            </tr>
+                            </table>
+                          </th>
+                          <th class="coldrop" align="left" style="vertical-align:top;"><img class="mobilehide" src="../../assets/clients/client-01/layouts/layout-01/images/offer_01_right.jpg" width="37" height="274" alt=""/></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                </td>
+            </tr>
+<!-- /offer_01_test --> 
+
+<!-- offer_01 -->
+            
+<!-- /offer_01 -->
+<!-- spacer -->
+            <tr>
+                <td valign="top" height="20" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+            </tr>
+<!-- /spacer -->
+<!-- baner_02 -->
+            <tr>
+              <td valign="top">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td align="left" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/banner_02.jpg" alt="" width="640" height="273" class="imgfull" style="display:block;" border="0" /></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </td>
+            </tr>
+<!-- /baner_02 --> 
+<!-- spacer -->
+            <tr>
+                <td valign="top" height="20" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+            </tr>
+<!-- /spacer -->
+<!-- offer_02 -->
+            <tr>
+              <td valign="top">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td align="left" style="vertical-align:top;" class="mobilehide"><img class="" src="../../assets/clients/client-01/layouts/layout-01/images/offer_02_left.jpg" width="37" height="274" alt=""/></td>
+                          <th align="left" style="vertical-align:top;" class="coldrop">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                            <td class="offer_text_bg no_bg" background="../../assets/clients/client-01/layouts/layout-01/images/offer_text_bg_02.jpg" bgcolor="" width="225" height="274" valign="middle">
+                            <!--[if gte mso 9]>
+                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:225px;height:274px;">
+                            <v:fill type="tile" src="assets/clients/client-01/layouts/layout-01/images/offer_text_bg_02.jpg" color="#718292" />
+                            <v:textbox inset="0,0,0,0">
+                            <![endif]-->
+                            <div>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                            <td height="274" valign="middle" style="vertical-align:middle;" align="center" class="autoheight">
+                            <table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+                            
+                            <tr>
+                            <td class="autoheight" valign="middle" align="center">
+                            <table width="95%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                            <td height="10" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            <tr>
+                            <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif; vertical-align:middle; font-size:18px; color:#000000; font-weight:bold;" height="" valign="middle" align="center">Een Large pizza 
+                              <br>
+                              voor slechts</td>
+                            </tr>
+                            <tr>
+                            <td height="10" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            <tr>
+                            <td style="vertical-align:middle; padding:0px 10px 0px 10px; font-family:Arial,Helvetica, sans-serif; color:#000000; font-weight:bold;" height="" valign="middle" align="center">
+                              <table border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif;font-size:65px; color:#000000; font-weight:bold;" height="" valign="middle" align="left">9</td>
+                                      <td style="vertical-align:top; font-family:Arial,Helvetica, sans-serif;color:#000000; font-weight:bold;" height="" valign="top" align="left">
+                                        <table align="left" border="0" cellspacing="0" cellpadding="0">
+                                          <tbody>
+                                            <tr>
+                                            <td height="5" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="" style="vertical-align:top; font-family:Arial,Helvetica, sans-serif;font-size:32px; color:#000000; font-weight:bold;">00</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif; vertical-align:middle; font-size:18px; color:#000000; font-weight:normal;" height="" valign="middle" align="center">CODE 12345</td>
+                            </tr>
+                            <tr>
+                            <td height="10" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            <tr>
+                            <td align="center" style="vertical-align:top;">
+                              <table width="95%" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" style="vertical-align:top;"><a href="#" ><img style="display:block;" class="" src="../../assets/clients/client-01/layouts/layout-01/images/btn.jpg" width="157" height="43" alt=""/></a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                            </td>
+                            </tr>                            
+                            <tr>
+                                <td height="10" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            <tr>
+                            <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif; vertical-align:middle; font-size:10px; color:#000000; font-weight:normal;" height="" valign="middle" align="center">Alleen i.c.m met je favoriete pizza. 
+                              <br>
+                              Geldig bij bezorgen en afhalen. </td>
+                            </tr>
+                            <tr>
+                            <td height="10" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            </tbody>
+                            </table>
+                            
+                            </td>
+                            </tr>
+                            
+                            </table>
+                            </td>
+                            </tr>
+                            </table>
+                            </div>
+                            <!--[if gte mso 9]>
+                            </v:textbox>
+                            </v:rect>
+                            <![endif]-->
+                            </td>
+                            </tr>
+                            </table>
+                          </th>
+                          <th align="left" style="vertical-align:top;" class="coldrop">
+                            <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="vertical-align:top;"><a href="#" ><img style="display:block; border:none;" class="imgfull offer_img_curved margin_t10" src="../../assets/clients/client-01/layouts/layout-01/images/offer_02_img.jpg" width="351" height="274" alt=""/></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                          <td align="left" style="vertical-align:top;" class="mobilehide"><img class="" src="../../assets/clients/client-01/layouts/layout-01/images/offer_02_right.jpg" width="27" height="274" alt=""/></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </td>
+            </tr>
+<!-- /offer_02 -->
+<!-- spacer -->
+            <tr>
+                <td valign="top" height="20" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+            </tr>
+<!-- /spacer -->
+<!-- offer_03 -->
+            <tr>
+              <td valign="top">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td align="left" style="vertical-align:top;" class="mobilehide"><img class="" src="../../assets/clients/client-01/layouts/layout-01/images/offer_02_left.jpg" width="37" height="274" alt=""/></td>
+                          <th align="left" style="vertical-align:top;" class="coldrop">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                            <td class="offer_text_bg no_bg" background="../../assets/clients/client-01/layouts/layout-01/images/offer_text_bg_02.jpg" bgcolor="" width="225" height="274" valign="middle">
+                            <!--[if gte mso 9]>
+                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:225px;height:274px;">
+                            <v:fill type="tile" src="assets/clients/client-01/layouts/layout-01/images/offer_text_bg_02.jpg" color="#718292" />
+                            <v:textbox inset="0,0,0,0">
+                            <![endif]-->
+                            <div>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                            <td height="274" valign="middle" style="vertical-align:middle;" align="center" class="autoheight">
+                            <table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+                            
+                            <tr>
+                            <td class="autoheight" valign="middle" align="center">
+                            <table width="95%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                            <td height="10" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            <tr>
+                            <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif; vertical-align:middle; font-size:18px; color:#000000; font-weight:bold;" height="" valign="middle" align="center">Korting op jouw 
+                              <br>
+                              favoriete kipgerecht</td>
+                            </tr>
+                            <tr>
+                            <td height="10" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            <tr>
+                            <td style="vertical-align:middle; padding:0px 10px 0px 10px; font-family:Arial,Helvetica, sans-serif; color:#000000; font-weight:bold;" height="" valign="middle" align="center">
+                              <table border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif;font-size:65px; color:#000000; font-weight:bold;" height="" valign="middle" align="left">-1</td>
+                                      <td style="vertical-align:top; font-family:Arial,Helvetica, sans-serif;color:#000000; font-weight:bold;" height="" valign="top" align="left">
+                                        <table align="left" border="0" cellspacing="0" cellpadding="0">
+                                          <tbody>
+                                            <tr>
+                                            <td height="5" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="" style="vertical-align:top; font-family:Arial,Helvetica, sans-serif;font-size:32px; color:#000000; font-weight:bold;">00</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif; vertical-align:middle; font-size:18px; color:#000000; font-weight:normal;" height="" valign="middle" align="center">CODE 12345</td>
+                            </tr>
+                            <tr>
+                            <td height="10" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            <tr>
+                            <td align="center" style="vertical-align:top;">
+                              <table width="95%" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" style="vertical-align:top;"><a href="#" ><img style="display:block;" class="" src="../../assets/clients/client-01/layouts/layout-01/images/btn.jpg" width="157" height="43" alt=""/></a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                            </td>
+                            </tr>                            
+                            <tr>
+                                <td height="10" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            <tr>
+                            <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif; vertical-align:middle; font-size:10px; color:#000000; font-weight:normal;" height="" valign="middle" align="center">Alleen i.c.m met je favoriete pizza. 
+                              <br>
+                              Geldig bij bezorgen en afhalen. </td>
+                            </tr>
+                            <tr>
+                            <td height="10" class="height_01" ><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                            </tr>
+                            </tbody>
+                            </table>
+                            
+                            </td>
+                            </tr>
+                            
+                            </table>
+                            </td>
+                            </tr>
+                            </table>
+                            
+                            
+                            
+                            </div>
+                            <!--[if gte mso 9]>
+                            </v:textbox>
+                            </v:rect>
+                            <![endif]-->
+                            </td>
+                            </tr>
+                            </table>
+                          </th>
+                          <th align="left" style="vertical-align:top;" class="coldrop">
+                            <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="vertical-align:top;"><a href="#" ><img style="display:block; border:none;" class="imgfull offer_img_curved margin_t10" src="../../assets/clients/client-01/layouts/layout-01/images/offer_03_img.jpg" width="351" height="274" alt=""/></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                          
+                          <td align="left" style="vertical-align:top;" class="mobilehide"><img class="" src="../../assets/clients/client-01/layouts/layout-01/images/offer_02_right.jpg" width="27" height="274" alt=""/></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </td>
+            </tr>
+<!-- /offer_03 -->
+<!-- spacer -->
+            <tr>
+                <td valign="top" height="20" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+            </tr>
+<!-- /spacer -->
+<!-- baner_03 -->
+            <tr>
+              <td valign="top">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td align="left" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/banner_03.jpg" alt="" width="640" height="410" class="imgfull" style="display:block;" border="0" /></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </td>
+            </tr>
+<!-- /baner_03 --> 
+<!-- footer_banner -->
+            <tr>
+              <td valign="top">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td align="left" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/footer_banner.jpg" alt="" width="640" height="365" class="imgfull" style="display:block;" border="0" /></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </td>
+            </tr>
+<!-- /footer_banner -->
+<!-- footer -->
+            <tr>
+              <td valign="top" bgcolor="#FFFFFF">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td align="center" style="vertical-align:top;">
+                            <table width="" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <th valign="top" align="left" class="social_left"><img style="display:block; border:none;" class="imgfull" src="../../assets/clients/client-01/layouts/layout-01/images/social_left.jpg" width="125" height="36" alt=""/></th>
+                                  <th valign="top" align="center" class="coldrop">
+                                    <table width="" align="center" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/fb_icon.png" alt="" width="29" height="29" class="imgfull" style="display:block;" border="0" /></a></td>
+                                          <td valign="top" width="8">&nbsp;</td>
+                                          <td align="center" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/twitter_icon.png" alt="" width="29" height="29" class="imgfull" style="display:block;" border="0" /></a></td>
+                                          <td valign="top" width="8">&nbsp;</td>
+                                          <td align="center" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/youtube_icon.png" alt="" width="29" height="29" class="imgfull" style="display:block;" border="0" /></a></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </th>
+                                  <th valign="top" align="left" class="coldrop" width="8" height="10"></th>
+                                  <th valign="top" align="center" class="coldrop">
+                                    <table width="" align="center" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/app_store.png" alt="" width="87" height="27" class="imgfull" style="display:block;" border="0" /></a></td>
+                                          <td valign="top" width="8">&nbsp;</td>
+                                          <td align="center" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/windows_store.png" alt="" width="87" height="27" class="imgfull" style="display:block;" border="0" /></a></td>
+                                          <td valign="top" width="8">&nbsp;</td>
+                                          <td align="center" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/google_play.png" alt="" width="87" height="27" class="imgfull" style="display:block;" border="0" /></a></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </th>
+                                  <th valign="top" align="left" class="social_right"><img style="display:block; border:none;" class="imgfull" src="../../assets/clients/client-01/layouts/layout-01/images/social_right.jpg" width="120" height="36" alt=""/></th>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </td>
+                        </tr>
+                        
+<!-- spacer -->
+                        <tr>
+                            <td valign="top" height="30" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                        </tr>
+<!-- /spacer -->
+                        <tr>
+                          <td align="center" style="vertical-align:top;">
+                            <table width="85%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <td class="" style="vertical-align:middle; font-family:Arial,Helvetica, sans-serif; vertical-align:middle; font-size:10px; color:#000000; font-weight:normal;" height="" valign="middle" align="center">Klik hier om onze Privacy Policy in te zien en Klik hier voor onze algemene voorwaarden.
+Wil je niet langer emails ontvangen van dominos@edm.dominos.nl? Klik hier om je uit te schrijven.
+Alle acties in deze mailing zijn alleen geldig op dominos.nl en niet in combinatie met andere acties.
+De promopizza’s zijn uitgesloten van deelname. Slicestores zijn uitgesloten van deelname.
+<br>
+<br>
+De mail is verstuurd in opdracht van Domino’s Pizza <br>
+Netherlands BV, Postbus 112, 4200 AC Gorinchem.</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </td>
+                        </tr>
+<!-- spacer -->
+                        <tr>
+                            <td valign="top" height="30" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                        </tr>
+<!-- /spacer -->
+                        <tr>
+                          <td align="center" style="vertical-align:top;">
+                            <table width="" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <th valign="top" align="center" class="coldrop">
+                                    <table width="" align="center" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/ideal_logo.png" alt="" width="24" height="22" class="imgfull" style="display:block;" border="0" /></a></td>
+                                          <td valign="top" width="8">&nbsp;</td>
+                                          <td align="center" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/master_card.png" alt="" width="34" height="22" class="imgfull" style="display:block;" border="0" /></a></td>
+                                          <td valign="top" width="8">&nbsp;</td>
+                                          <td align="center" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/VISA.png" alt="" width="33" height="22" class="imgfull" style="display:block;" border="0" /></a></td>
+                                          <td valign="top" width="8">&nbsp;</td>
+                                          <td align="center" style="vertical-align:top;"><a href="#" ><img src="../../assets/clients/client-01/layouts/layout-01/images/PayPal.png" alt="" width="21" height="22" class="imgfull" style="display:block;" border="0" /></a></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+<!-- spacer -->
+                        <tr>
+                            <td valign="top" height="30" class="height_01"><!--[if gt mso 14]>&nbsp;<![endif]--></td>
+                        </tr>                       
+<!-- /spacer -->
+                      </tbody>
+                    </table>
+                </td>
+            </tr>
+<!-- /footer -->
+
+          </tbody>
+        </table>
+    </td>
+</tr>
+</tbody>
+</table>
+<!-- end Main Body module -->
+<!-- header module start -->
+
+
+
+<!-- header module end -->
+
+
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+</body></html>
